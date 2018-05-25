@@ -138,19 +138,6 @@ PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
 
-# GPS
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl \
-    android.hardware.gnss@1.0-service \
-    gps.msm8916 \
-    libshims_get_process_name
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/flp.conf:system/etc/flp.conf \
-    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/configs/izat.conf:system/etc/izat.conf \
-    $(LOCAL_PATH)/configs/sap.conf:system/etc/sap.conf
-
 # IMS
 PRODUCT_PACKAGES += \
     telephony-ext
