@@ -91,7 +91,8 @@ PRODUCT_PACKAGES += \
     camera.msm8916 \
     libboringssl-compat \
     libc_util \
-    libshims_camera
+    libshims_camera \
+    Snap
 
 # Charger
 PRODUCT_PACKAGES += \
