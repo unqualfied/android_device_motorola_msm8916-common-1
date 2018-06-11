@@ -5,3 +5,5 @@ allow cameraserver mpctl_socket:dir search;
 unix_socket_connect(cameraserver, mpctl, perfd)
 unix_socket_connect(cameraserver, thermal, thermal-engine)
 unix_socket_connect(cameraserver, sensors, sensors)
+
+allow cameraserver camera_bgproc_service:service_manager { add find };

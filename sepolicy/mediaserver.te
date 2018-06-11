@@ -12,3 +12,8 @@ unix_socket_connect(mediaserver, mpctl, mpdecision)
 unix_socket_connect(mediaserver, thermal, thermal-engine)
 
 allow mediaserver time_daemon:unix_stream_socket connectto;
+
+allow mediaserver camera_bgproc_service:service_manager { add find };
+
+allow mediaserver hal_configstore_ISurfaceFlingerConfigs:hwservice_manager find;
+allow mediaserver hal_configstore_default:binder call;
