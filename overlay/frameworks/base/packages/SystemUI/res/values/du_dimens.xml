@@ -21,4 +21,6 @@
     <!-- Big clock dozing -->
     <dimen name="dozing_big_clock_padding" format="float">0.50</dimen>
 
+    <dimen name="rounded_corner_content_padding">8dp</dimen>
+
 </resources>
