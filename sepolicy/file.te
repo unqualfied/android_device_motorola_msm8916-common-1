@@ -11,3 +11,4 @@ type grep_exec, exec_type, file_type;
 type sysfs_mmi_touch, fs_type, sysfs_type;
 
 type proc_cpu_alignment, fs_type, proc_type;
+type proc_slabinfo, fs_type, proc_type;
