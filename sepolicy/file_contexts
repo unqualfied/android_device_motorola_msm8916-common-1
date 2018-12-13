@@ -25,6 +25,7 @@
 
 # RIL
 /data/misc/cutback(/.*)?                                    u:object_r:cutback_data_file:s0
+/data/misc/netmgr(/.*)?                                     u:object_r:netmgr_data_file:s0
 /dev/socket/cutback                                         u:object_r:rild_socket:s0
 
 # Sensors
@@ -34,6 +35,9 @@
 /dev/stml0xx_as                                             u:object_r:sensors_device:s0
 /dev/stml0xx_ms                                             u:object_r:sensors_device:s0
 /data/misc/akmd(/.*)?                                       u:object_r:sensors_data_file:s0
+
+# Sysfs files
+/sys/devices/w1_bus_master1(/.*)?                           u:object_r:sysfs_w1_bus:s0
 
 # Power
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.0-service-qti      u:object_r:hal_power_default_exec:s0
