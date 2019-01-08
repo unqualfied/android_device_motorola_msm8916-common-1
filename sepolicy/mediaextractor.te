@@ -1,0 +1,2 @@
+# allow mediaextractor read permissions for file sources
+allow mediaextractor sdcard_type:file { getattr read };
