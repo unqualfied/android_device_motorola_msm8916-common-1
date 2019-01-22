@@ -11,6 +11,9 @@
 /(vendor|system/vendor)/bin/init\.qcom\.ril\.sh             u:object_r:qcom_ril_exec:s0
 /(vendor|system/vendor)/bin/stml0xx_wrapper\.sh             u:object_r:stml0xx_exec:s0
 
+# Lights
+/sys/devices/soc\.0/leds-atc-12/leds(/.*)?                  u:object_r:sysfs_leds:s0
+
 # mmi_touch related /sys files
 /sys/bus/i2c/drivers(/.*)?                                  u:object_r:sysfs_mmi_touch:s0
 /sys/devices/soc\.0/78b6000\.i2c/i2c-2/2-0020(/.*)?         u:object_r:sysfs_mmi_touch:s0
@@ -22,6 +25,7 @@
 
 # RIL
 /data/misc/cutback(/.*)?                                    u:object_r:cutback_data_file:s0
+/data/misc/netmgr(/.*)?                                     u:object_r:netmgr_data_file:s0
 /dev/socket/cutback                                         u:object_r:rild_socket:s0
 
 # Sensors
@@ -31,3 +35,6 @@
 /dev/stml0xx_as                                             u:object_r:sensors_device:s0
 /dev/stml0xx_ms                                             u:object_r:sensors_device:s0
 /data/misc/akmd(/.*)?                                       u:object_r:sensors_data_file:s0
+
+# Sysfs files
+/sys/devices/w1_bus_master1(/.*)?                           u:object_r:sysfs_w1_bus:s0
