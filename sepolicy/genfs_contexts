@@ -4,11 +4,3 @@ genfscon sysfs /devices/soc.0/78b5000.i2c/i2c-1/1-006b/power_supply 	           
 genfscon sysfs /devices/soc.0/78b5000.i2c/i2c-1/1-0036/power_supply 	                      u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/virtual/net                                                           u:object_r:sysfs_net:s0
 genfscon sysfs /devices/soc.0/a000000.qcom,wcnss-wlan                                         u:object_r:sysfs_net:s0
-
-genfscon proc /cpu/alignment u:object_r:proc_cpu_alignment:s0
-genfscon proc /slabinfo u:object_r:proc_slabinfo:s0
-
-# Power
-genfscon debugfs /rpm_stats                           u:object_r:debugfs_rpm:s0
-genfscon debugfs /rpm_master_stats                    u:object_r:debugfs_rpm:s0
-genfscon debugfs /system_stats                        u:object_r:debugfs_rpm:s0
