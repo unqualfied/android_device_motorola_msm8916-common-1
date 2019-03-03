@@ -28,7 +28,7 @@ include $(CLEAR_VARS)
 LOCAL_SRC_FILES := ASensorManager.cpp libqsap_shim.c
 LOCAL_SHARED_LIBRARIES := android.hardware.sensors@1.0 libqsap_sdk liblog
 LOCAL_STATIC_LIBRARIES := android.hardware.sensors@1.0-convert
-LOCAL_C_INCLUDES := $(TOP)/system/qcom/softap/sdk
+LOCAL_C_INCLUDES := $(TOP)/vendor/qcom/opensource/softap/softap/sdk
 LOCAL_MODULE := libqsap_shim
 LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_TAGS := optional
