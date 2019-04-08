@@ -19,8 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := framework-res
 
@@ -203,8 +202,8 @@ PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sysfs
 
 # Vendor security patch level
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2018-04-01
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    ro.lineage.build.vendor_security_patch=2018-04-01
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -312,4 +311,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 $(call inherit-product-if-exists, vendor/motorola/msm8916-common/msm8916-common-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
